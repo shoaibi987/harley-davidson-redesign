@@ -1,0 +1,249 @@
+/* Primary-colour : #f60 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 10px;
+  font-weight: 400;
+  height: 96vh;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+.section-upper {
+  height: 40vh;
+  width: 100%;
+  background: #f60;
+  font-size: 0.7rem;
+}
+
+/* typography text in section upper */
+.typography {
+  margin-top: 5rem;
+  text-transform: uppercase;
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.typography h4 {
+  font-size: 1.5rem;
+  transform: scale(1, 1.2);
+  font-weight: normal;
+  margin-left: 2.4rem;
+  margin-top: 8rem;
+}
+
+.typography h1 {
+  font-size: 5rem;
+  position: absolute;
+  font-family: 'Titillium Web';
+  letter-spacing: 3px;
+  top: 15.8rem;
+  left: 2rem;
+}
+
+/* NAVBAR STYLING */
+.navbar-container {
+  display: flex;
+  flex-basis: 25%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0 1rem 1rem;
+  background: #f60;
+  color: white;
+  text-transform: uppercase;
+}
+
+.--bars {
+  width:1.5rem;
+  margin-right: auto;
+  margin-left: 4%;
+  margin-top: 0.4rem;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 6.5rem;
+  margin-left: -250%;
+}
+
+.--motorcycle-categories {
+  display: flex;
+  margin-right: auto;
+  margin-left: -40%;
+  margin-top: 0.2rem;
+}
+
+.--motorcycle-categories img {
+  width: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.--profile {
+  display: flex;
+  margin-right: 3rem;
+}
+
+.--profile img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.--profile p {
+  margin-right: auto;
+  margin-left: 1rem;
+  align-self: center;
+  font-weight: bold;
+}
+
+.--find-dealer {
+  border: 3px solid black;
+  color: black;
+  font-weight: bold;
+  margin-right: 3rem;
+  padding: 0.4rem 1rem;
+}
+
+.--find-dealer:hover,
+.section-down--paragraph span:hover {
+  border-color: white;
+  color: white;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+/* SECTION 2 */
+.section-down--container {
+  display: flex;
+  background-color: black;
+}
+
+.video-image {
+  width: 64vw;
+}
+
+.video-image img {
+  height: 52vh;
+  width: 100%;
+}
+
+.section-down--paragraph {
+  align-self: stretch;
+  background: black;
+  width: 50vw;
+}
+
+.section-down--paragraph p {
+  width: 80%;
+  font-size: 1rem;
+  color: grey;
+  text-transform: capitalize;
+  line-height: 1.7;
+  margin: 4rem 0 4rem 3rem;
+}
+
+.section-down--paragraph b {
+  color: white;
+  font-weight: bold;
+}
+
+.section-down--paragraph span {
+  color: white;
+  font-weight: bold;
+  border: 2px solid #ff6600;
+  padding: 0.4rem 2.5rem;
+  margin: 2rem 0;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.customization-options {
+  display: flex;
+  margin-top: 6rem;
+  color: white;
+  margin-left: 17%;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.customization-options img {
+  width: 2rem;
+}
+
+.image-corner {
+  align-self: flex-end;
+  background: black;
+  animation-name: slideInRight;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.image-corner img {
+  height: 25vh;
+  width: 45vh;
+  order: 1;
+}
+
+.black-silver {
+  height: 51vh;
+  width: 31.5vw;
+  position: absolute;
+  right: 0;
+  animation-name: slideInRight2;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+/* animations */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translate(200px, 200px);
+  }
+
+  70% {
+    transform: translate(-20px, -20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight2 {
+  0% {
+    opacity: 0;
+    transform: translate(200px, -400px)
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
